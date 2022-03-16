@@ -18,9 +18,16 @@ fetch("https://jsonplaceholder.typicode.com/users")
       userCardLists.after(card);
       return { name: user.name, email: user.email, element: card };
     });
+    // console.log(users);
   });
 
 seachInput.addEventListener("input", (e) => {
   console.log(e.target.value);
-  console.log(users);
+  const value = e.target.value;
+  users.forEach((user) => {
+    console.log(user.email);
+    const isVisible = user.name.includes(value) || user.email.includes(value);
+    console.log(isVisible);
+    user.element.classList.toggle("hide", !isVisible);
+  });
 });
