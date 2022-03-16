@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>検索バーの実装チュートリアル</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="serarch-section">
+      <div class="serarch-area">
+        <input
+          type="text"
+          id="inputSearch"
+          placeholder="ここに入力してください"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+
+      <div class="userCardList">
+        <!-- <div class="userCard">
+          <h3>ShinCode</h3>
+          <p>shincode@gmail.com</p>
+        </div>
+        <div class="userCard">
+          <h3>ShinCode</h3>
+          <p>shincode@gmail.com</p>
+        </div>
+        <div class="userCard">
+          <h3>ShinCode</h3>
+          <p>shincode@gmail.com</p>
+        </div> -->
+        <div id="userCard">
+          <h3 id="userName"></h3>
+          <p id="email"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
